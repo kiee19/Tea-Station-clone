@@ -21,14 +21,21 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
         rel="stylesheet">
 
+
+    <!-- JQuery -->
+    <script defer src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
     <!-- 
-        scripts
-    -->
+            scripts
+        -->
     <script defer type="module" src="./js/main.js"></script>
 
 </head>
 
 <body>
+    <!-------------------
+        Hero
+      ------------------>
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to white overflow-y-clip">
 
         <div class="container relative flex items-center justify-center w-full h-full xl:justify-start">
@@ -68,6 +75,28 @@
             </div>
 
 
+        </div>
+    </section>
+
+    <!-------------------
+        Partner Logos
+    ------------------>
+    <section id="parnet-logos">
+        <div class="container">
+            <!-- Heading -->
+            <div class="mt-10">
+                <h2 class="sub_heading">Có mặt tại</h2>
+                <h1 class="main_heading">Những nhà phân phối <span class="text-gradient">Uy tín</span>
+                </h1>
+            </div>
+
+            <!-- Logos -->
+            <div class="flex mt-0 md:mt-16">
+                <div id="partner-logo-list"
+                    class="flex flex-none logos-wrapper gap-14 pl-14 [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+
+                </div>
+            </div>
         </div>
     </section>
 </body>
