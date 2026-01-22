@@ -31,6 +31,10 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply text-base font-inter overflow-x-clip;
   }
@@ -42,11 +46,34 @@
   button {
     @apply px-1 py-1 border cursor-pointer;
   }
+
+  li {
+    @apply text-xs font-inter lg:text-base text-n-500;
+  }
 }
 
 @layer components {
+  /* Navigation */
+  .navLink {
+    @apply text-base font-medium leading-none tracking-wide capitalize cursor-pointer text-n-700 hover:text-n-800;
+  }
+
+  .mobileNavLink {
+    @apply text-p-50 hover:text-p-200;
+  }
+
+  .dropdown-menu {
+    @apply absolute right-8 top-[70%] w-[300px] bg-p-900 backdrop-blur-[15px] rounded-lg overflow-hidden flex flex-col gap-4 items-center justify-center h-0 transition-all duration-200 ease-in-out;
+  }
+
+  .dropdown-menu.open {
+    height: 150px;
+    padding: 2rem 0;
+  }
+
+  /* Hero */
   .btn {
-    @apply flex items-center justify-center gap-2 py-2 px-4 text-sm tracking-wider text-white bg-p-900 hover:bg-p-700 border-p-900 transition-colors duration-500 font-inter lg:py-3 lg:px-9;
+    @apply flex items-center justify-center gap-2 px-4 py-2 text-sm tracking-wider text-white transition-colors duration-500 bg-p-900 hover:bg-p-700 border-p-900 font-inter lg:py-3 lg:px-9;
   }
 
   .text-gradient {
@@ -74,5 +101,45 @@
 
   .logo-ticker-image {
     @apply w-auto h-6 lg:h-9;
+  }
+
+  .tabContainer {
+    @apply flex flex-col w-full gap-8 md:flex-row md:gap-16;
+
+    > div {
+      @apply w-full my-auto;
+    }
+
+    h3 {
+      @apply text-3xl font-bold capitalize lg:text-4xl;
+    }
+
+    h4 {
+      @apply mt-4 text-xl font-semibold text-p-900 md:mt-8;
+    }
+
+    p {
+      @apply max-w-xl mt-2;
+    }
+
+    button {
+      @apply flex-none mt-4 md:mt-8;
+    }
+  }
+
+  .productImg {
+    @apply w-full md:w-1/2 h-[250px] md:h-[700px] md:rounded-[80px] md:rounded-br-[80px] object-cover;
+  }
+
+  .tab-link {
+    @apply font-semibold hover:text-n-700;
+
+    span {
+      @apply hidden sm:inline;
+    }
+  }
+
+  .activeTab {
+    @apply text-p-900;
   }
 }
