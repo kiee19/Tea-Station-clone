@@ -51,3 +51,15 @@ $(function () {
     animation: "slide",
   });
 });
+
+/**
+ * Best sellers
+ *
+ */
+
+$(function () {
+  $(".slider").slick({
+    autoplay: true,
+    dots: true,
+  });
+});

@@ -10,8 +10,14 @@
     <!-- 
         CSS
     -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
     <link rel="stylesheet" href="./css/showHideNav.css">
     <link rel="stylesheet" href="./css/responsive-tabs.css">
+    <link rel="stylesheet" href="./css/animated-counter-prograssbar.css">
     <link href="./dist/output.css" rel="stylesheet">
 
 
@@ -26,13 +32,16 @@
 
 
     <!-- JQuery -->
-    <script defer src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- 
             scripts
         -->
+    <script defer type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script defer src="js/jquery.hidescroll.js"></script>
     <script defer src="js/jquery.responsiveTabs.js"></script>
+    <script defer src="js/animated-counter-prograssbar.js"></script>
     <script defer type="module" src="./js/main.js"></script>
 
 </head>
@@ -143,7 +152,6 @@
     <!----------------
         Products
     ---------------->
-
     <section id="products">
         <div class="container">
             <div class="flex flex-col gap-9">
@@ -272,6 +280,509 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <!----------------
+        Slogans
+    ---------------->
+    <section id="slogan" class="mt-20 overflow-clip">
+        <div class="relative min-w-full h-[30vh] max-h-[276px] overflow-hidden flex justify-center items-center">
+            <video poster="./assets/video.mp4" autoplay loop muted
+                class="absolute inset-0 min-w-full min-h-full -z-10 md:top-[-20%] md:left-[-50%] md:translate-x-1/2">
+                <source src="./assets//video.mp4" type="video/mp4" />
+            </video>
+
+            <p
+                class="px-4 text-base tracking-wide text-center text-white md:text-2xl text-shadown-[2px_2px_8px_#000000]">
+                Chỉ những lá trà ngon nhất mới được đưa vào sản phẩm của chúng tôi, <br class="hidden lg:block" />
+                đảm bảo mỗi ngụm trà đều mang hương vị tinh khiết và tuyệt hảo.
+            </p>
+        </div>
+    </section>
+
+    <!----------------
+        Features
+    ---------------->
+    <section id="features">
+        <div class="container relative m-20 text-center">
+            <!-- hàng đầu -->
+            <div class="flex flex-col items-center justify-center w-full gap-0 lg:gap-10 lg:flex-row">
+                <div class="feature-card bg-[url(/assets/benefit_1.jpg)] group">
+                    <div class="feature-filter">
+
+                    </div>
+
+                    <h3>Nguồn cung cao cấp</h3>
+                    <p>Chúng tôi tự hào sản xuất trà ngay tại Hoa Kỳ, sử dụng nguyên liệu chất lượng cao từ các trang
+                        trại địa phương.</p>
+                </div>
+
+                <div class="order-first bg-p-50 feature-card lg:order-none lg:bg-transparent">
+                    <div>
+                        <h2 class="sub_heading">Why Us?</h2>
+                        <h1 class="leading-loose text-center main_heading">Sự <span class="text-gradient">độc đáo</span>
+                            từ <br>
+                            Tea Station
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="feature-card bg-[url(/assets/pic1.jpg)] group">
+                    <div class="feature-filter">
+
+                    </div>
+
+                    <h3>
+                        Hương vị và pha chế
+                        độc đáo
+                    </h3>
+                    <p>Sản phẩm độc quyền của chúng tôi gồm các loại trà được với hương vị độc đáo, được chế tác để làm
+                        hài lòng mọi khẩu vị.</p>
+                </div>
+            </div>
+
+            <!-- Hàng thứ 2 -->
+            <div class="flex flex-col items-center justify-center w-full lg:-mt-20 lg:gap-10 lg:flex-row">
+                <div class="feature-card bg-[url(/assets/benefit_2.jpg)] group">
+                    <div class="feature-filter">
+
+                    </div>
+
+                    <h3>
+                        Tập trung vào sức khỏe
+                    </h3>
+                    <p>Hãy thưởng thức các loại trà tốt cho sức khỏe của chúng tôi, được pha chế cẩn thận để hỗ trợ trí
+                        óc, cơ thể và tâm hồn của bạn.
+                    </p>
+                </div>
+                <div class="feature-card bg-[url(/assets/benefit_4.jpg)] group">
+                    <div class="feature-filter">
+
+                    </div>
+
+                    <h3>
+                        Trải Nghiệm Cá Nhân Hoá
+                    </h3>
+                    <p>Trải nghiệm dịch vụ được cá nhân hóa với mọi đơn hàng, phù hợp với sở thích và nhu cầu trà riêng
+                        của bạn.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------
+        Best sellers
+    ---------------->
+    <section id="best-sellers">
+        <div class="container my-20">
+            <!-- Tiêu đề -->
+            <div class="flex flex-col items-start md:items-center lg:items-start">
+                <div>
+                    <h2 class="sub_heading">Khách hàng yêu thích</h2>
+                    <h2 class="main_heading">
+                        Những Sản Phẩm <span class="text-gradient">Bán Chạy Nhất</span>
+                    </h2>
+                </div>
+
+                <p class="max-w-lg pr-16 mt-2 text-sx text-start md:text-center lg:flex-start text-n-500">
+                    Khám phá những sản phẩm bán chạy nhất của chúng tôi, nơi chất lượng kết hợp hương vị trong mỗi tách
+                    trà. Hãy tham gia cùng hàng ngàn khách hàng hài lòng đã biến những hỗn hợp này thành sở thích của họ
+                    và nâng tầm thời gian uống trà của bạn ngay hôm nay!
+                </p>
+            </div>
+
+            <!-- Carousel sản phẩm -->
+            <div class="lg:px-4 md:x-2 mt-9 slider">
+                <!-- Sản phẩm 1 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <!-- Phần bên trái -->
+                    <div class="flex-1 best-product--left">
+                        <div class="best-product-info">
+                            <h3>Peppermint Velvet</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương
+                                thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi
+                                lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp
+                                dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở
+                                thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- Thanh tiến trình -->
+                        <div class="benefit-bars" id="firstbar">
+                            <!-- Hàng trên -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường năng lượng và tập trung
+                                </h4>
+
+                                <div progress-bar data-percentage="90%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Giàu chất chống oxy hóa
+                                </h4>
+
+                                <div progress-bar data-percentage="93%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hàng dưới -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường trao đổi chất
+                                </h4>
+
+                                <div progress-bar data-percentage="94%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Thúc đẩy sự bình tĩnh và thư giãn
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Phần bên phải -->
+                    <div>
+                        <img src="./assets/products/matcha1.jpg" alt="best-seller-product">
+                    </div>
+
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <!-- Phần bên trái -->
+                    <div class="flex-1 best-product--left">
+                        <div class="best-product-info">
+                            <h3>Chamomile Bliss</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương
+                                thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi
+                                lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp
+                                dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở
+                                thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- Thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- Hàng trên -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường năng lượng và tập trung
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Giàu chất chống oxy hóa
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hàng dưới -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường trao đổi chất
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Thúc đẩy sự bình tĩnh và thư giãn
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần bên phải -->
+                    <div>
+                        <img src="./assets/products/blacktea1.jpg" alt="best-seller-product">
+                    </div>
+
+                </div>
+
+                <!-- Sản phẩm 3 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <!-- Phần bên trái -->
+                    <div class="flex-1 best-product--left">
+                        <div class="best-product-info">
+                            <h3>Lemon Ginger Zest</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương
+                                thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi
+                                lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp
+                                dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở
+                                thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- Thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- Hàng trên -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường năng lượng và tập trung
+                                </h4>
+
+                                <div progress-bar data-percentage="80%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Giàu chất chống oxy hóa
+                                </h4>
+
+                                <div progress-bar data-percentage="90%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hàng dưới -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường trao đổi chất
+                                </h4>
+
+                                <div progress-bar data-percentage="85%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Thúc đẩy sự bình tĩnh và thư giãn
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần bên phải -->
+                    <div>
+                        <img src="./assets/products/whitetea1.jpg" alt="best-seller-product">
+                    </div>
+
+                </div>
+
+                <!-- Sản phẩm 4 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <!-- Phần bên trái -->
+                    <div class="flex-1 best-product--left">
+                        <div class="best-product-info">
+                            <h3>Mystic Earl Grey</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương
+                                thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi
+                                lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp
+                                dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở
+                                thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- Thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- Hàng trên -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường năng lượng và tập trung
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Giàu chất chống oxy hóa
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hàng dưới -->
+                            <div class="flex-1 progressbar-item">
+                                <h4 class="progress-title">
+                                    Tăng cường trao đổi chất
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <h4 class="progress-title">
+                                    Thúc đẩy sự bình tĩnh và thư giãn
+                                </h4>
+
+                                <div progress-bar data-percentage="95%">
+                                    <div class="progress-number">
+                                        <div class="progress-number-mark">
+                                            <span class="percent"></span>
+                                            <span class="down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bg">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần bên phải -->
+                    <div>
+                        <img src="./assets/products/oolong1.jpg" alt="best-seller-product">
+                    </div>
+
+                </div>
+            </div>
+
 
         </div>
     </section>
